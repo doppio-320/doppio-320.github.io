@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./index.css">
+        <title>doppio</title>
+    </head>
+    <body>
+        <div id="title">
+            <p id="randWord">
+                #RANDOM_TEXT
+            </p>
+        </div>
+
+        <div id="hidden">
+            <p style="text-align: center;"><a href="./pages/helpme.html">Oh I'm here too</a></p>
+        </div>
+
+        <script>
+            var phrases = ["Did Doppio bring you here?", "There's not much here, yet.", "Hello there.", "What should I put here?", "<a href=\"https://twitter.com/athr_blue\"><b>athr_blue</b></a> on twt", "It gets boring here too, you know?"]
+
+            function randFloat(min, max)    {                
+                return Math.random() * (max - min) + min;
+            }
+
+            function randInt(min, max)      {
+                return Math.round(randFloat(min, max));
+            }                    
+
+            function onLoad() {
+                document.getElementById("randWord").innerHTML = phrases[randInt(0, 5)];
+            }
+
+            onLoad();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+
+    background-color: black;
+}
+
+#defoko {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    border: 3px solid white;
+}
+
+#count {
+    margin: 0;
+    position: absolute;
+    top: 61%;
+    left: 39%;
+
+    transform: translate(-50%, -50%);
+}
+
+#side {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    transform: translateY(-50%);
+}

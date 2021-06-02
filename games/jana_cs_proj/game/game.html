@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Whack-a-Sus!</title>
+        <link href="game.css" rel="stylesheet" type="text/css">  
+        <script src="game.js"></script>
+    </head>
+    <body>                
+        <div id="gameStart" onclick="playerReady()">
+            <h1 id="message">CLICK HERE TO START</h1>
+        </div>
+
+        <h1 id="score" style="visibility: hidden;">SCORE: 0 MISSES: 0</h1>
+
+        <div id="gameArea">
+            <ul class="gameRow">
+                <li><img class="hole" id="hole1" src="sprites/norm.png" onclick="hole1Bonk()"></li>
+                <li><img class="hole" id="hole2" src="sprites/norm.png" onclick="hole2Bonk()"></li>
+                <li><img class="hole" id="hole3" src="sprites/norm.png" onclick="hole3Bonk()"></li>
+                <li><img class="hole" id="hole4" src="sprites/norm.png" onclick="hole4Bonk()"></li>
+                <li><img class="hole" id="hole5" src="sprites/norm.png" onclick="hole5Bonk()"></li>
+            </ul>            
+        </div>
+    </body>
+</html>
