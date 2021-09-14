@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta name="author" content="Anthony James G. Moran">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">                
+        <title>Five Nights at Wangshen</title>
+
+        <body onload="setNewFrame()" style="background-color: black;">
+        </body>
+
+        <script>       
+            function getRandomInt(min, max) {
+                min = Math.ceil(min);
+                max = Math.floor(max);
+                return Math.floor(Math.random() * (max - min + 1)) + min;
+            }
+        
+            function setNewFrame() {
+                document.body.style.backgroundImage = "url(./taos/f" + String(getRandomInt(1, 12)) + ".png)";
+
+                setTimeout(function(){
+                    setNewFrame();
+                }, getRandomInt(100, 750));
+            }
+        </script>
+    </head>        
+</html>
