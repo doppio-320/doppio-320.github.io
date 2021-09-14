@@ -1,0 +1,22 @@
+body {
+    background-color: black;    
+    background-size: cover;
+
+    overflow-y: hidden; 
+    overflow-x: hidden;
+}
+
+.txt {
+    color:  white;
+    font-family: consolas;
+
+    margin-left: 50px;
+}
+
+.gif {
+    position: absolute;
+    top: 0px;
+
+    opacity: 0.05;
+    width: 100%;
+}

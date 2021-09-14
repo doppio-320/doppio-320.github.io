@@ -3,26 +3,34 @@
     <head>
         <meta name="author" content="Anthony James G. Moran">
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">                
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">       
+        <link rel="stylesheet" type="text/css" href="./bruh.css">         
         <title>Five Nights at Wangshen</title>
+    </head>    
+    
+    <body onload="setNewFrame()">         
+        <h1 class="txt" style="margin-top: 100px;">Five Nights at Wangshen</h1>   
 
-        <body onload="setNewFrame()" style="background-color: black;">
-        </body>
+        <h2 class="txt" style="margin-top: 100px;">NEW GAME</h2>
+        <h2 class="txt" style="margin-top: 10px;">CONTINUE</h2>
+        <p class="txt" style="margin-top: 10px;">Night 4</p>          
+            
+        <img src="../media/static.gif" class="gif">
+    </body>        
 
-        <script>       
-            function getRandomInt(min, max) {
-                min = Math.ceil(min);
-                max = Math.floor(max);
-                return Math.floor(Math.random() * (max - min + 1)) + min;
-            }
-        
-            function setNewFrame() {
-                document.body.style.backgroundImage = "url(./taos/f" + String(getRandomInt(1, 12)) + ".png)";
+    <script>       
+        function getRandomInt(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+    
+        function setNewFrame() {   
+            document.body.style.backgroundImage = "url(./taos/f" + String(getRandomInt(1, 12)) + ".png)";
 
-                setTimeout(function(){
-                    setNewFrame();
-                }, getRandomInt(100, 750));
-            }
-        </script>
-    </head>        
+            setTimeout(function(){
+                setNewFrame();
+            }, getRandomInt(75, 1225));
+        }
+    </script>  
 </html>
