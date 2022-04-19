@@ -1,6 +1,7 @@
 removeHintDeleteHS();
 if(localStorage.getItem("highscore") === null) {
     localStorage.setItem("highscore", 0);
+    document.getElementById("highScoreButton").innerHTML = "Highscore: " + localStorage.getItem("highscore");
 }
 
 function hintDeleteHS() {
