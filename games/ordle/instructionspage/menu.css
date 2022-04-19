@@ -1,0 +1,143 @@
+body {
+    background-color: rgb(20, 20, 20);
+    margin: 0;
+
+    user-select: none;
+
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;   
+    
+    overflow-x: hidden;
+}
+
+h1 {    
+    font-weight: bolder;    
+    font-size: 100px;
+
+    text-align: center;
+
+    margin-bottom: 0;
+}
+
+#smallText {
+    text-align: center;
+}
+
+.spanHighlight {
+    color: white;
+    background-color: rgb(20, 20, 20);
+    padding: 0px 5px 0px 5px;
+}
+
+.whiteSection {
+    background-color: white;
+
+    padding: 10px;
+    width: 100%;
+
+    display: block;     
+}
+
+#instructionsHeader {
+    color: rgb(20, 20, 20);
+    font-size: 50px;
+    margin-top: 0;
+}
+
+p.whiteBg {
+    color: rgb(20, 20, 20);
+    font-family: consolas;        
+}
+
+.subsect {
+    padding: 30px;
+
+    display: grid;
+    place-items: center;
+}
+
+.gameButton {
+    border: 3px solid rgb(50, 50, 50);    
+
+    font-size: 35px;
+    font-weight: bold;
+
+    min-width: 20%;    
+    text-align: center;
+    padding: 10px 0;
+
+    transition: background-color 0.25s;
+
+    display: block;
+    margin: 5px;
+}
+
+#highScoreButton {
+    font-size: 15px;
+    min-width: 10%;    
+}
+
+#highScoreButton:hover {
+    background-color: rgb(105, 50, 50);
+}
+
+#playButton:hover {
+    background-color: rgb(50, 105, 50);
+}
+
+#settingsContainer {    
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+.settingParent {    
+    color: rgb(20, 20, 20);
+    border: 3px solid rgb(50, 50, 50);    
+
+    font-weight: bold;
+    font-size: 25px;
+
+    display: block;
+
+    margin: 15px;
+}
+
+.settingParent p {
+    text-align: center;
+    margin: 10px;
+}
+
+.settingHint {
+    font-weight: normal;
+    font-size: 10px;
+}
+
+.optionsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+.optionButton {
+    border: 3px solid rgb(50, 50, 50);
+    font-size: 10px;
+    font-weight: normal;
+    margin: 5px;    
+    padding: 5px;
+
+    transition: background-color 0.25s, color 0.25s;
+}
+
+.selectedButton {
+    background-color: rgb(20, 20, 20);
+    color: white;
+}
+
+.footerData {
+    color: rgb(75, 75, 75);
+
+    font-family: consolas;
+
+    margin: 5px;
+}

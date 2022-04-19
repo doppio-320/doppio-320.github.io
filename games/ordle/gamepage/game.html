@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Ordle</title>     
+        
+        <link rel="stylesheet" type="text/css" href="game.css">
+    </head>
+
+    <body>        
+        <div id="timerBar" style="width: calc(100%); z-index: 1;"></div>
+
+        <div id="gameContainer">
+            <ul id="shuffleDisplay">
+                <li>-</li>
+                <li>-</li>
+                <li>-</li>
+                <li>-</li>
+                <li>-</li>
+            </ul>
+        </div>
+
+        <div id="lowerSection">
+            <div id="messageContainer">
+                <p id="gameMessage">Score: 0</p>
+            </div>
+        </div>
+
+        <div id="preGameDisplay">
+            <p id="preGameMessage">Press Enter to start playing</p>
+            <p id="highScoreDisplay">Highscore: </p>
+        </div>
+    </body>
+    <script src="game.js"></script>
+</html> 

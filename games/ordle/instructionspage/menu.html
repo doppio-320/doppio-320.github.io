@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Ordle - Menu</title>     
+        
+        <link rel="stylesheet" type="text/css" href="menu.css">
+    </head>
+
+    <body>        
+        <h1>Ordle</h1>
+        <p id="smallText">It's like Wordle, but it without the order!</p>
+
+        <div class="whiteSection">
+            <h1 id="instructionsHeader">How to Play</h1>
+            <img src="images/sample1.png" style="width: 512px; float: right; margin-right: 20px;">
+            <p class="whiteBg">The game will give you a sequence of letters and numbers, the goal is to sort them out in <span class="spanHighlight">increasing order from left to right</span>. Arrange them so that each letter and their corresponding place in the English alphabet is in increasing order along with the regular numbers in the sequence.</p>
+            <h1 id="instructionsHeader" style="text-align: left;">How to Control</h1>
+            <p class="whiteBg">Use the <span class="spanHighlight">A</span> key on your keyboard to move your selection to the left, and use the <span class="spanHighlight">D</span> key to move to the right, the boxed letter with the white background indicates
+                it is selected.
+            </p>
+            <p class="whiteBg">Use the <span class="spanHighlight">Shift</span> key on your keyboard to enable <span class="spanHighlight">Edit mode</span>, in this mode moving the selector using the A and D keys will bring the letter along with it.</p>
+            <p class="whiteBg">To score a point, disable the edit mode once you're done and you will earn one point if it's correct.</p>
+            <h1 id="instructionsHeader" style="text-align: left;">The game's too easy, how do I turn it up a notch?</h1>
+            <p class="whiteBg">The game starts out with a twenty second time limit and as you play more, this time goes down to as low as 10 on the easiest difficulty. Additionally, the game will add the amount of numbers or letters in each sequence and goes up to 7 from the initial 5.</p>
+            <h1 id="instructionsHeader" style="text-align: left; font-size: 25px;">Still too easy?</h1>
+            <p class="whiteBg" style="margin-bottom: 50px;">You can also <span class="spanHighlight">configure how difficult</span> you want your game to be by editing the time limit and sequence size! Additionally bonuses are given to players who finish quickly. You can change the settings of your game, just below the play button.</p>
+        </div>        
+
+        <div class="subsect">
+            <div id="playButton" class="gameButton" onclick="playGame()">Play!</div>            
+            <div id="highScoreButton" class="gameButton" onmouseover="hintDeleteHS()" onmouseleave="removeHintDeleteHS()" onclick="deleteHS()">Highscore: 0</div>
+        </div>
+
+        <div class="whiteSection" style="padding: 15px; overflow:hidden; width:100%;">
+            <h1 id="instructionsHeader" style="margin-bottom: 10px;">Difficulty Configuration</h1>
+            <div id="settingsContainer">
+                <div class="settingParent">
+                    <p>Time</p>
+                    <p class="settingHint">Time decreases with more difficulty</p>
+                    <div class="optionsContainer">
+                        <div onclick="setTimeHighlight(this);setTimeDifficulty(20, 10)" class="selectedButton optionButton timeOption">Easy</div>
+                        <div onclick="setTimeHighlight(this);setTimeDifficulty(15, 9)" class="optionButton timeOption">Medium</div>
+                        <div onclick="setTimeHighlight(this);setTimeDifficulty(10, 7)" class="optionButton timeOption">Hard</div>
+                    </div>
+                </div>
+                <div class="settingParent">
+                    <p>Sequence Size</p>
+                    <p class="settingHint">Size increases with more difficulty</p>
+                    <div class="optionsContainer">
+                        <div onclick="setSizeHighlight(this);setSizeDifficulty(5, 7)" class="selectedButton optionButton sizeOption">Easy</div>
+                        <div onclick="setSizeHighlight(this);setSizeDifficulty(6, 9)" class="optionButton sizeOption">Medium</div>
+                        <div onclick="setSizeHighlight(this);setSizeDifficulty(8, 10)" class="optionButton sizeOption">Hard</div>
+                    </div>
+                </div>
+
+                <div class="settingParent">
+                    <p>Music</p>                    
+                    <div class="optionsContainer">
+                        <div onclick="setMusicHighlight(this);setMusicOption(true)" class="selectedButton optionButton musicOption">On</div>
+                        <div onclick="setMusicHighlight(this);setMusicOption(false)" class="optionButton musicOption">Off</div>                        
+                    </div>
+                </div>
+            </div>
+        </div>      
+        
+        <div class="subsect">
+            <p class="footerData">Created by Gabriella De Veyra</p>
+            <p class="footerData">9 - Rubidium</p>
+        </div>
+    </body>    
+
+    <script src="menu.js"></script>    
+</html> 
