@@ -42,8 +42,6 @@ let largestDeckSize = 7;
 let currentDeckSize = defaultDeckSize;
 let roundsBeforeDeckIncrease = 8;
 
-let enableMusic = true;
-
 let canEdit = false;
 let editMode = false;
 let currentSelection = 0;
@@ -60,6 +58,7 @@ let slowestCompletionTime = 4;
 let score = 0;
 let highScore = 0;
 
+let enableMusic = true;
 let audio = new Audio("music/song1.mp3");
 
 //First start
@@ -109,14 +108,24 @@ function newRound() {
 }
 
 function loadStorageData() {
-    defaultTime = Number.parseInt(localStorage.getItem("maxTime"));
-    lowestTime = Number.parseInt(localStorage.getItem("minTime"));    
+    if(localStorage.getItem("maxTime") != null) {
+        defaultTime = Number.parseInt(localStorage.getItem("maxTime"));
+    }    
+    if(localStorage.getItem("minTime") != null) {
+        lowestTime = Number.parseInt(localStorage.getItem("minTime"));    
+    }        
 
-    defaultDeckSize = Number.parseInt(localStorage.getItem("minSize"));
-    largestDeckSize = Number.parseInt(localStorage.getItem("maxSize"));
+    if(localStorage.getItem("minSize") != null) {
+        defaultDeckSize = Number.parseInt(localStorage.getItem("minSize"));  
+    }        
+    if(localStorage.getItem("maxSize") != null) {
+        largestDeckSize = Number.parseInt(localStorage.getItem("maxSize"));
+    }      
     currentDeckSize = defaultDeckSize;
 
-    enableMusic = (localStorage.getItem("musicOn") === 'true');
+    if(localStorage.getItem("musicOn") != null) {
+        enableMusic = (localStorage.getItem("musicOn") === 'true');
+    }       
 
     if(localStorage.getItem("highscore") != null) {
         highScore = Number.parseInt(localStorage.getItem("highscore"));
