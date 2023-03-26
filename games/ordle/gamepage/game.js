@@ -51,7 +51,6 @@ let tickRate = 30;
 let tickPeriod = 1/tickRate;
 let tickPeriodMillis = tickPeriod * 1000;
 
-
 let lastroundStart = null;
 let slowestCompletionTime = 4;
 
@@ -286,7 +285,7 @@ function checkAnswer() {
     }
 
     if(roundsBeforeDeckIncrease == 0) {
-        roundsBeforeTimeLoss = 8;
+        roundsBeforeDeckIncrease = 8;
         if(currentDeckSize < largestDeckSize) {
             currentDeckSize++;            
         }        
