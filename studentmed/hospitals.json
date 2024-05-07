@@ -1,0 +1,23 @@
+[
+    {
+        "name":"Corazon C. Aquino Hospital",
+        "location":"Circumferential Road, Biasong, Dipolog",
+        "landline":"(065) 212 5555",
+        "distance":"19 KM. ~28 Minutes",
+        "icon":
+        "https://upload.wikimedia.org/wikipedia/en/e/e4/Corazon_C._Aquino_Hospital_seal.png",
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbes-VRjSNFNaSvjmS9SSqCAJfkCtBb2CiFBtcdT08EQ&s",
+        "hours":"24/7",
+        "services":["Dermatology","Dentistry","Urology"]
+    },
+    {
+        "name":"Ace Medical Center Dipolog",
+        "location":"Barangay Olingan, Dipolog",
+        "landline":"0975-931-1016",
+        "distance":"Around 12.7 KM. ~16 Minutes",
+        "icon":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaO8IVeduDu-X85Mqb9w9EKZLDuDCV9MbGlqwCdW8l7A&s",
+        "image":"https://lh5.googleusercontent.com/proxy/wd7fBjg3WxuanG9H-qjca_Ak7pjm8q5ccjiX2gaugykw-V3HGTemIdEYcXttqPyDo-UdBE49q2OfPF3SjU_lFkbVuzVnFR7me7gUz4yHzHEhJucfbIfUjwdCghRKe5GRoD7cfYUrL5Txi9w5okNxwJEEIFysX4OWpcukxAZJ8SjK",
+        "hours":"Unknown",
+        "services":["None"]
+    }
+]
